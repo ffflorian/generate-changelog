@@ -19,7 +19,7 @@ $ npm i generate-changelog -g # install it globally
 
 ## Usage
 
-To use this module, your commit messages have to be in this format:
+To use this module, your commit messages should to be in this format:
 
 ```
 type(category): description
@@ -41,6 +41,8 @@ Where `type` is one of the following:
 * `test`
 
 And `category` can be anything of your choice. If you use a type not found in the list (but it still follows the same format of the message), it'll be grouped under `other`.
+
+If there is no type found, your commits will be grouped under `other/uncategorized`.
 
 You can either run this module as a CLI app that prepends the new logs to a file (recommended):
 
